@@ -57,6 +57,7 @@ public class DecimalToBinary {
 		*/
 		
 		System.out.println( convertDecimalToBinary( 43 ) );
+		System.out.println( convertDecimalToBinary( -6 ) );
 	}
 	
     public static String convertDecimalToBinary(int decimalNum) {
