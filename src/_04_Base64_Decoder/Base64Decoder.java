@@ -49,14 +49,16 @@ public class Base64Decoder {
 	public static byte[] convert4CharsTo24Bits(String s) {
 		byte[] bytes = new byte[3];
 		String one = Integer.toBinaryString(s.charAt(0));
-		int one2 = Integer.parseInt(one);
-		bytes[0] = (byte) one2;
 		String two = Integer.toBinaryString(s.charAt(1));
-		int two2 = Integer.parseInt(two);
-		bytes[1] = (byte) two2;
 		String three = Integer.toBinaryString(s.charAt(2));
-		int three2 = Integer.parseInt(three);
-		bytes[2] = (byte) three2;
+		String four = Integer.toBinaryString(s.charAt(3));
+		System.out.println(one+two+three+four);
+		String combined = one+two+three+four;
+		int combinedint = Integer.parseInt(combined);
+		System.out.println(combinedint);
+		
+	
+		
 		
 	
 
